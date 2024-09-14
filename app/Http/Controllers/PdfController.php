@@ -68,5 +68,7 @@ class PdfController extends Controller
 
         $pdf = Pdf::loadView("pdfinvoice", $data);
         return $pdf->stream();
+
+        
     }
 }
